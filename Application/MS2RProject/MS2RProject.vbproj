@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CC2FBDC0-A149-4542-A283-885084FADD38}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MS2RProject.My.MyApplication</StartupObject>
+    <RootNamespace>MS2RProject</RootNamespace>
+    <AssemblyName>MS2RProject</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MS2RProject.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MS2RProject.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>F:\BTS-SIO\SLAM2- Programation Orientée Objet\DeevoirPOO\ProjetGroupe\CityRider (2)\CityRider\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes Métier\Admin.vb" />
+    <Compile Include="Classes Métier\Services.vb" />
+    <Compile Include="Classes Techniques\AccesBDD.vb" />
+    <Compile Include="Modification et ajout\AjoutLogiciel.Designer.vb">
+      <DependentUpon>AjoutLogiciel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modification et ajout\AjoutLogiciel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modification et ajout\AjoutMateriel.Designer.vb">
+      <DependentUpon>AjoutMateriel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modification et ajout\AjoutMateriel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modification et ajout\AjoutService.Designer.vb">
+      <DependentUpon>AjoutService.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modification et ajout\AjoutService.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes Métier\Ecran.vb" />
+    <Compile Include="Classes Techniques\Collection.vb" />
+    <Compile Include="Classes Techniques\Fonction.vb" />
+    <Compile Include="Connexion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connexion.Designer.vb">
+      <DependentUpon>Connexion.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modification et ajout\ModifAdmin.Designer.vb">
+      <DependentUpon>ModifAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modification et ajout\ModifAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modification et ajout\ModifLogiciel.Designer.vb">
+      <DependentUpon>ModifLogiciel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modification et ajout\ModifLogiciel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modification et ajout\ModifMat.Designer.vb">
+      <DependentUpon>ModifMat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modification et ajout\ModifMat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion\GestionLogiciel.Designer.vb">
+      <DependentUpon>GestionLogiciel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion\GestionLogiciel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion\GestionMateriels.Designer.vb">
+      <DependentUpon>GestionMateriels.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion\GestionMateriels.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion\GestionServices.Designer.vb">
+      <DependentUpon>GestionServices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion\GestionServices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes Métier\Logiciel.vb" />
+    <Compile Include="Classes Métier\Materiel.vb" />
+    <Compile Include="MenuAdmin.Designer.vb">
+      <DependentUpon>MenuAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modification et ajout\MofifService.Designer.vb">
+      <DependentUpon>MofifService.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modification et ajout\MofifService.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Classes Métier\PC.vb" />
+    <Compile Include="Classes Métier\Tablette.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Modification et ajout\AjoutLogiciel.resx">
+      <DependentUpon>AjoutLogiciel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modification et ajout\AjoutMateriel.resx">
+      <DependentUpon>AjoutMateriel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modification et ajout\AjoutService.resx">
+      <DependentUpon>AjoutService.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Connexion.resx">
+      <DependentUpon>Connexion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modification et ajout\ModifAdmin.resx">
+      <DependentUpon>ModifAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modification et ajout\ModifLogiciel.resx">
+      <DependentUpon>ModifLogiciel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modification et ajout\ModifMat.resx">
+      <DependentUpon>ModifMat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion\GestionLogiciel.resx">
+      <DependentUpon>GestionLogiciel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion\GestionMateriels.resx">
+      <DependentUpon>GestionMateriels.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion\GestionServices.resx">
+      <DependentUpon>GestionServices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAdmin.resx">
+      <DependentUpon>MenuAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modification et ajout\MofifService.resx">
+      <DependentUpon>MofifService.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

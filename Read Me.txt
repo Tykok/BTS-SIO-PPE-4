@@ -1,0 +1,14 @@
+Le dossier "Application" contient le code source de l'application (VB.Net)
+
+Le dossier "Base De Données" contient le Modèle Conceptuel des Données (MCD) ainsi que le .sql à importer sur PhpMyAdmin
+
+Le dossier "Ressources" contient :
+	- Le diagramme de Gantt
+	- Le compte rendu de PPE4
+	- Le cahier des charges
+	- Le PDF imprimé sur les questions portées sur les besoins de l'application
+	- Le fichier PDF permettant la validation des maquettes de l'application
+	- L'exécutable de 'application
+
+/!\ Pour que l'application fonctionne, la BDD importé sous PhpMyAdmin doit porter le nom de 'ms2r_app', accessible
+en local avec un utilisateur 'root' sans mot de passe !
